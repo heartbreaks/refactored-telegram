@@ -80,7 +80,7 @@ const NewTask = ({
         style={{ zIndex: 20 }}
       >
         <textarea
-          placeholder="Enter Title"
+          placeholder="Название"
           value={newItemTitle}
           onChange={(e) => setNewItemTitle(e.target.value)}
           className={`p-2 my-3 w-full ${
@@ -96,7 +96,7 @@ const NewTask = ({
               isDarkMode ? "bg-red-400" : "bg-red-200"
             } rounded-md p-2 disabled:opacity-60`}
           >
-            Cancel
+            Отменить
           </button>
           <button
             onClick={handleAddItem}
@@ -105,7 +105,7 @@ const NewTask = ({
               isDarkMode ? "bg-gray-400" : "bg-gray-200"
             } rounded-md hover:bg-gray-120 hover:text-white-150  disabled:opacity-50 transition-all duration-500 ease-in-out`}
           >
-            Add Item
+            Добавить
           </button>
         </div>
       </div>

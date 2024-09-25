@@ -37,7 +37,7 @@ const SharedProjects = () => {
     <ProtectedWrapper>
       <Layout>
         <>
-          <h1>Shared projects here:</h1>
+          <h1>Общие проекты:</h1>
           {isLoading && <Loader />}
           <main className="flex flex-col min-h-screen lg:grid grid-cols-3 gap-5">
             {data &&

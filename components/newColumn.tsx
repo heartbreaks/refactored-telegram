@@ -63,7 +63,7 @@ const NewColumn = ({
       } ${openNewColumn ? "block" : "hidden"}  `}
     >
       <input
-        placeholder="Enter Title"
+        placeholder="Название"
         value={newColumnTitle}
         onChange={(e) => setNewColumnTitle(e.target.value)}
         name="newTitle"
@@ -83,7 +83,7 @@ const NewColumn = ({
           disabled={newColumnTitle === ""}
           onClick={handleAddNewColumn}
         >
-          Add Column
+          Добавить
         </button>
       </div>
     </div>

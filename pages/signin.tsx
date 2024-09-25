@@ -48,7 +48,7 @@ const Signin = () => {
       >
         <>
           <Head>
-            <title>Kallo | Sign In</title>
+            <title>Todolist | Sign In</title>
             <link rel="icon" href="/home-1.png" />
           </Head>
 
@@ -64,7 +64,7 @@ const Signin = () => {
             }}
           >
             <p className={`mb-4  text-xl xl:text-3xl uppercase font-bold`}>
-              Log in
+              Войти
             </p>
             <Input
               placeholder="Email"
@@ -87,12 +87,12 @@ const Signin = () => {
               disabled={email === "" || password === ""}
               className="w-3/4 mx-auto rounded-sm mt-3  bg-gradient-to-bl from-blue-400 to-blue-500 text-white-175 hover:bg-blue-500 transition-all duration-500"
             >
-              Sign In
+              Войти
             </Button>
             <Link href="/signup">
               <p className=" mt-32 cursor-pointer">
-                Don't have an account yet?{" "}
-                <span className="font-bold">Register now</span>
+                Нет аккаунта?{" "}
+                <span className="font-bold">Зарегистрироваться</span>
               </p>
             </Link>
           </form>

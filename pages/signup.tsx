@@ -86,7 +86,7 @@ const Signup = () => {
         }`}
       >
         <Head>
-          <title>Kallo | Register</title>
+          <title>Todolist | Register</title>
           <link rel="icon" href="/home-1.png" />
         </Head>
         <>
@@ -99,10 +99,10 @@ const Signup = () => {
             onSubmit={handleSignUp}
           >
             <p className={`mb-4  text-xl xl:text-3xl uppercase font-bold`}>
-              Register.
+              Регистрация.
             </p>
             <Input
-              placeholder="First Name"
+              placeholder="Имя"
               type="text"
               name="firstName"
               value={firstName}
@@ -110,7 +110,7 @@ const Signup = () => {
               onChange={(e) => setFirstName(e.target.value)}
             />
             <Input
-              placeholder="Last Name"
+              placeholder="Фамилия"
               type="text"
               name="lastName"
               value={lastName}
@@ -118,7 +118,7 @@ const Signup = () => {
               onChange={(e) => setLastName(e.target.value)}
             />
             <Input
-              placeholder="Username"
+              placeholder="Никнейм"
               type="text"
               name="username"
               value={username}
@@ -134,7 +134,7 @@ const Signup = () => {
               onChange={(e) => setEmail(e.target.value)}
             />
             <Input
-              placeholder="Password"
+              placeholder="Пароль"
               type="password"
               name="password"
               value={password}
@@ -142,7 +142,7 @@ const Signup = () => {
               onChange={(e) => setPassword(e.target.value)}
             />
             <Input
-              placeholder="Confirm Password"
+              placeholder="Подтверждение"
               type="password"
               name="confirmPassword"
               value={confirmPassword}
@@ -161,12 +161,12 @@ const Signup = () => {
               }
               className="w-3/4 mx-auto rounded-sm mt-3  bg-gradient-to-bl from-blue-400 to-blue-500 text-white-175 hover:bg-blue-500 transition-all duration-500"
             >
-              Register
+              Регистрация
             </Button>
             <Link href="/signin">
               <p className="mt-32 cursor-pointer">
-                Already have an account?{" "}
-                <span className="font-bold cursor-pointer">Sign In</span>
+                Уже есть аккаунт?{" "}
+                <span className="font-bold cursor-pointer">Войти</span>
               </p>
             </Link>
           </form>

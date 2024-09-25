@@ -167,7 +167,7 @@ const Tasks = () => {
   return (
     <ProtectedWrapper>
       <Head>
-        <title>{taskTitle} | Kallo</title>
+        <title>{taskTitle} | Todolist</title>
       </Head>
       <Layout>
         <main className="min-h-screen">
@@ -228,16 +228,16 @@ const Tasks = () => {
                 </button>
                 <input
                   type="text"
-                  placeholder="Add a todo..."
+                  placeholder="Добавить"
                   className="flex-grow border-none bg-transparent"
                   value={newTodoTitle}
                   onChange={(e) => setNewTodoTitle(e.target.value)}
                 />
               </form>
-              {allTodos && projectId && completedTodos && (
+              {allTodos && projectId && notCompletedTodos && (
                 <>
-                  <p>Tasks - {completedTodos.length}</p>
-                  {completedTodos.map((todo, i) => (
+                  <p>Задачи - {notCompletedTodos.length}</p>
+                  {notCompletedTodos.map((todo, i) => (
                     <Todo
                       todo={todo}
                       index={i}
@@ -248,10 +248,10 @@ const Tasks = () => {
                   ))}
                 </>
               )}
-              {allTodos && projectId && notCompletedTodos && (
+              {allTodos && projectId && completedTodos && (
                 <>
-                  <p>Completed - {notCompletedTodos.length}</p>
-                  {notCompletedTodos.map((todo, i) => (
+                  <p>Законченные задачи - {completedTodos.length}</p>
+                  {completedTodos.map((todo, i) => (
                     <Todo
                       todo={todo}
                       index={i}

@@ -79,7 +79,7 @@ const Feature = () => {
               className="max-w-[800px]  mx-auto lg:text-center space-y-8 "
             >
               <div className="font-bold tracking-tighter  md:text-5xl hidden md:block 3xl:text-7xl">
-                Kallo
+                Todolist
               </div>
               <p className="text-xl text-black z-10 3xl:text-2xl">
                 {" "}

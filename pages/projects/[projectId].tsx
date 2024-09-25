@@ -138,9 +138,9 @@ const Project = () => {
       <Head>
         {projectDeets ? (
           // @ts-ignore
-          <title>{projectDeets.title} | Kallo</title>
+          <title>{projectDeets.title} | Todolist</title>
         ) : (
-          <title>Kallo</title>
+          <title>Todolist</title>
         )}
       </Head>
       <Layout>

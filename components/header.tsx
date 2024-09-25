@@ -32,7 +32,7 @@ const Header = () => {
     >
       <Link href="/">
         <h2 className="text-3xl font-bold cursor-pointer tracking-wide">
-          Kallo
+          Todolist
         </h2>
       </Link>
       {isLoading && <Loader />}
@@ -58,7 +58,7 @@ const Header = () => {
                       isDarkMode ? "text-white" : "text-black"
                     } mr-3`}
                   />
-                  My Projects
+                  Мои доски
                 </div>
               </Link>
             </li>
@@ -71,7 +71,7 @@ const Header = () => {
                       isDarkMode ? "text-white" : "text-black"
                     } mr-3`}
                   />
-                  Shared Projects
+                  Общие проекты
                 </div>
               </Link>
             </li>

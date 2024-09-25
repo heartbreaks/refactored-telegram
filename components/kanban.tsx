@@ -320,7 +320,7 @@ const Kanban = ({ headerImage, projectId, userStatus }: KanbanProps) => {
                       }`}
                       onClick={() => setOpenNewColumn(!openNewColumn)}
                     >
-                      + New Column
+                      + Создать колонку
                     </button>
                     <NewColumn
                       openNewColumn={openNewColumn}

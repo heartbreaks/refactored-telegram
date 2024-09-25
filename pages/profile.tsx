@@ -34,7 +34,7 @@ const Profile = () => {
     <Layout>
       <ProtectedWrapper>
         <Head>
-          <title>Kallo | Profile</title>
+          <title>Todolist | Profile</title>
           <link rel="icon" href="/home-1.png" />
         </Head>
         <main

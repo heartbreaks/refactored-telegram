@@ -95,7 +95,7 @@ const Projects = () => {
       <ProtectedWrapper>
         <Layout>
           <>
-            <h1 className="text-4xl font-bold uppercase ">Projects</h1>
+            <h1 className="text-4xl font-bold uppercase ">Мои проекты</h1>
             <Loader />
           </>
         </Layout>
@@ -106,23 +106,23 @@ const Projects = () => {
       <Layout>
         <>
           <Head>
-            <title>Projects | Kallo</title>
+            <title>Проекты | Todolist</title>
           </Head>
           <section
             className={`relative flex flex-col justify-start transition-all duration-300 ease-in-out lg:min-h-screen pt-0 mt-0 pb-20 z-20 `}
           >
             <div className="flex justify-between">
               <div>
-                <h1 className="text-4xl font-bold uppercase ">Projects</h1>
+                <h1 className="text-4xl font-bold uppercase ">Проекты</h1>
                 {projects && (
                   <p className="mb-5 text-white">
-                    Items: {projects.length || 0}
+                    Всего досок: {projects.length || 0}
                   </p>
                 )}
               </div>
 
               <Modal
-                modalName="ADD +"
+                modalName="Создать"
                 bgColor={"bg-blue-500 text-white-150 "}
                 openModal={openModal}
                 setOpenModal={setOpenModal}
@@ -135,7 +135,7 @@ const Projects = () => {
                     className="rounded-md w-full h-64 object-cover"
                   />
                   <input
-                    placeholder="Add project title"
+                    placeholder="Классный проект"
                     className="my-3 px-3 py-1 w-full rounded-sm text-black"
                     onChange={(e) => setProjectTitle(e.target.value)}
                   />
@@ -146,7 +146,7 @@ const Projects = () => {
                         onClick={() => setRevealImageSearch(!revealImageSearch)}
                       >
                         <BsFillImageFill size={12} className="mr-2" />
-                        Cover
+                        Фон
                       </button>
                       {revealImageSearch && (
                         <UnsplashImageSearch
@@ -170,12 +170,12 @@ const Projects = () => {
                         {isPrivateProject ? (
                           <>
                             <BsLock size={12} className="mr-2" />
-                            Private
+                            Закрытый
                           </>
                         ) : (
                           <>
                             <BsUnlock size={12} className="mr-2" />
-                            Public
+                            Публичный
                           </>
                         )}
                       </button>
@@ -195,14 +195,14 @@ const Projects = () => {
                       className="px-2 py-1 rounded-sm hover:bg-red-400 transition-all duration-500 ease-in-out mr-3"
                       onClick={() => setOpenModal(false)}
                     >
-                      cancel
+                      отменить
                     </button>
                     <button
                       className="px-2 py-1 rounded-sm bg-blue-500 text-white-175 hover:shadow-2xl transition-all duration-500 ease-in-out disabled:opacity-50"
                       onClick={handleAddProject}
                       disabled={projectTitle === "" ? true : false}
                     >
-                      + create
+                      + создать
                     </button>
                   </div>
                 </>
@@ -226,7 +226,7 @@ const Projects = () => {
                   })}
               </div>
             ) : (
-              <>{<h2>You do not have any projects.</h2>}</>
+              <>{<h2>У вас нет ни одного проекта</h2>}</>
             )}
           </section>
         </>
